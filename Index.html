@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma & Sabor | Menú especializado</title>
+    <meta name="description" content="Descubre nuestra barra de especialidades, 
+        repostería artesanal y desayunos típicos costarricenses en Café Aroma & Sabor.">
+
+    <!-- Librería de iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="css/smooth-effects.css">
+
+    <!-- Estilos de escritorio y móvil -->
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 769px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+</head>
+
+<body class="menu-home-page">
+
+    <!-- Splash screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo-icon"><i class="ri-cup-line" aria-hidden="true"></i></div>
+            <h1>Café Aroma & Sabor</h1>
+            <p>El arte de un café excepcional</p>
+            <div class="splash-loader"></div>
+        </div>
+    </div>
+
+    <!-- Header escritorio -->
+    <header class="pill-header" role="banner">
+        <nav class="pill-nav" aria-label="Navegación principal de escritorio">
+
+            <div class="logo">
+                <i class="ri-cup-line" aria-hidden="true"></i> Aroma
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="nuestros-productos.html">Nuestros productos</a></li>
+            </ul>
+            <a href="#menu" class="pill-btn">Pedir</a>
+        </nav>
+    </header>
+
+    <!-- Header móvil -->
+    <header class="mobile-top-header" role="banner">
+
+        <div class="mobile-logo">
+            <i class="ri-cup-line" aria-hidden="true"></i>
+            <span>Café Aroma & Sabor | Menú</span>
+        </div>
+    </header>
+
+    <!-- Navegación móvil -->
+    <nav class="mobile-bottom-nav menu-home-nav" aria-label="Navegación móvil inferior">
+        <button class="mobile-nav-btn active" data-category="todos" data-category-name="Todos los productos"
+            aria-label="Todos los productos">
+            <i class="ri-home-4-line" aria-hidden="true"></i><small>Todo</small>
+        </button>
+        <button class="mobile-nav-btn" data-category="calientes" data-category-name="Bebidas calientes"
+            aria-label="Bebidas calientes">
+            <i class="ri-cup-fill" aria-hidden="true"></i><small>Calientes</small>
+        </button>
+        <button class="mobile-nav-btn" data-category="frias" data-category-name="Bebidas frías"
+            aria-label="Bebidas frías">
+            <i class="ri-goblet-line" aria-hidden="true"></i><small>Frías</small>
+        </button>
+        <button class="mobile-nav-btn" data-category="bakery" data-category-name="Panadería y repostería"
+            aria-label="Panadería y repostería">
+            <i class="ri-cake-3-line" aria-hidden="true"></i><small>Bakery</small>
+        </button>
+        <button class="mobile-nav-btn" data-category="entradas" data-category-name="Desayunos y entradas"
+            aria-label="Desayunos y entradas">
+            <i class="ri-restaurant-line" aria-hidden="true"></i><small>Entradas</small>
+        </button>
+        <button class="mobile-nav-btn" data-category="postres" data-category-name="Postres ticos"
+            aria-label="Postres ticos">
+            <i class="ri-cake-2-line" aria-hidden="true"></i><small>Postres</small>
+        </button>
+        <div class="mobile-site-links" aria-label="Secciones del sitio">
+            <a href="nosotros.html"><i class="ri-heart-3-line" aria-hidden="true"></i> Nosotros</a>
+            <a href="nuestros-productos.html"><i class="ri-cake-3-line" aria-hidden="true"></i> Productos</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>¿Un cafecito? Sírvele gusto a tu día</h1>
+            <p>Café fresco, repostería y antojitos tradicionales.</p>
+            <a href="#menu" class="btn-main">Ver la carta</a>
+        </div>
+    </section>
+
+    <!-- Menú -->
+    <section id="menu" class="menu-section">
+        <h2>El sabor de un buen momento</h2>
+        <p class="subtitle">Disfruta nuestro café de altura y repostería casera, preparados para hacer de cada momento
+            algo especial.</p>
+
+
+        <!-- Categorías -->
+        <div class="category-tabs desktop-tabs" role="tablist">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-category="todos"
+                data-category-name="Todos los productos">Todos</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-category="calientes"
+                data-category-name="Bebidas calientes"><i class="ri-cup-fill"></i> Calientes</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-category="frias"
+                data-category-name="Bebidas frías"><i class="ri-goblet-line"></i> Frías</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-category="bakery"
+                data-category-name="Panadería y repostería"><i class="ri-cake-3-line"></i> Panadería</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-category="entradas"
+                data-category-name="Desayunos y entradas"><i class="ri-restaurant-line"></i> Entradas /
+                desayunos</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-category="postres"
+                data-category-name="Postres ticos"><i class="ri-cake-2-line"></i> Postres</button>
+        </div>
+
+        <h3 id="current-category-title" class="dynamic-category-title">Todos los productos</h3>
+
+        <!-- Productos -->
+        <div class="menu-grid" id="menu-container">
+
+            <!-- ==================== BEBIDAS CALIENTES ==================== -->
+            <div class="menu-item" data-category="calientes">
+                <h3>Café chorreado tradicional <span>₡1,200 <small>($2.30)</small></span></h3>
+                <p>Preparado a la antigua en bolsa de tela con grano selecto de altura nacional.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Café chorreado en tarro de esmalte <span>₡1,400 <small>($2.70)</small></span></h3>
+                <p>Porción generosa de café negro de chorreador servida en tradicional tarro vintage.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Espresso sencillo <span>₡1,200 <small>($2.30)</small></span></h3>
+                <p>Carga única con notas equilibradas y cuerpo denso.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Espresso doble <span>₡1,600 <small>($3.00)</small></span></h3>
+                <p>Doble carga de intensidad y notas acarameladas profundas.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Americano / negro <span>₡1,500 <small>($2.90)</small></span></h3>
+                <p>Espresso diluido en agua caliente para mantener la finura del grano.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Cappuccino artesanal <span>₡2,000 <small>($3.80)</small></span></h3>
+                <p>Equilibrio perfecto entre espresso, leche vaporizada y espuma aterciopelada.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Cappuccino saborizado (vainilla / caramelo / avellana) <span>₡2,300 <small>($4.40)</small></span>
+                </h3>
+                <p>Cappuccino clásico con jarabe artesanal de tu elección.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Latte de la casa <span>₡2,100 <small>($4.00)</small></span></h3>
+                <p>Espresso con abundante leche vaporizada y un toque sutil de arte latte.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Flat white <span>₡2,100 <small>($4.00)</small></span></h3>
+                <p>Doble espresso con microespuma de leche sedosa y cuerpo robusto.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Mocha caliente <span>₡2,400 <small>($4.60)</small></span></h3>
+                <p>Espresso, chocolate oscuro artesanal, leche vaporizada y crema batida.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Café V60 (método filtrado) <span>₡2,300 <small>($4.40)</small></span></h3>
+                <p>Extracción limpia y aromática que resalta notas florales del grano de origen.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Café Chemex <span>₡2,500 <small>($4.80)</small></span></h3>
+                <p>Método de filtrado de papel grueso para una taza sumamente limpia y delicada.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Café prensa francesa <span>₡2,200 <small>($4.20)</small></span></h3>
+                <p>Cuerpo robusto y aceites esenciales preservados para una taza intensa.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Café Aeropress <span>₡2,400 <small>($4.60)</small></span></h3>
+                <p>Inmersión rápida que extrae notas complejas y un cuerpo limpio excepcional.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Macchiato <span>₡1,600 <small>($3.00)</small></span></h3>
+                <p>Espresso manchado con una cucharada ligera de espuma de leche.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Cortado <span>₡1,700 <small>($3.30)</small></span></h3>
+                <p>Partes iguales de espresso y leche vaporizada cremosa.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Agua dulce tradicional <span>₡1,100 <small>($2.10)</small></span></h3>
+                <p>Bebida caliente clásica elaborada con pura tapa de dulce artesanal costarricense.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Agua dulce con leche <span>₡1,400 <small>($2.70)</small></span></h3>
+                <p>Tradicional bebida caliente a base de tapa de dulce artesanal y leche entera.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Chocolate caliente tico <span>₡1,800 <small>($3.50)</small></span></h3>
+                <p>Cacao puro nacional preparado con leche caliente y un toque sutil de canela.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Chocolate caliente con malvaviscos <span>₡2,100 <small>($4.00)</small></span></h3>
+                <p>Nuestro chocolate artesanal coronado con mini malvaviscos fundidos.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Infusión de chan o jengibre <span>₡1,300 <small>($2.50)</small></span></h3>
+                <p>Bebida natural caliente con miel de abeja local y limón fresco.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Té chai latte caliente <span>₡2,300 <small>($4.40)</small></span></h3>
+                <p>Especias aromáticas de la India, té negro y leche vaporizada cremosa.</p>
+            </div>
+            <div class="menu-item" data-category="calientes">
+                <h3>Té verde o de manzanilla caliente <span>₡1,200 <small>($2.30)</small></span></h3>
+                <p>Selección de infusiones naturales para calmar y reconfortar.</p>
+            </div>
+
+            <!-- ==================== BEBIDAS FRÍAS ==================== -->
+            <div class="menu-item" data-category="frias">
+                <h3>Iced coffee tico <span>₡1,800 <small>($3.50)</small></span></h3>
+                <p>Café frío concentrado servido sobre abundante hielo y toque de leche.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Iced americano <span>₡1,600 <small>($3.00)</small></span></h3>
+                <p>Doble espresso sobre agua fría y cubos de hielo crujientes.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Iced latte <span>₡2,200 <small>($4.20)</small></span></h3>
+                <p>Espresso doble con leche fría y cubos de hielo.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Nitro cold brew <span>₡2,500 <small>($4.80)</small></span></h3>
+                <p>Infusionado con nitrógeno, textura cremosa en boca sin azúcar añadida.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Granizado de café (copopo) <span>₡2,200 <small>($4.20)</small></span></h3>
+                <p>Café especial espresso batido con hielo granizado y leche condensada.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Frappuccino de caramelo <span>₡2,600 <small>($5.00)</small></span></h3>
+                <p>Café blended con hielo, jarabe de caramelo artesanal y chantilly.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Frappuccino de mocha <span>₡2,700 <small>($5.20)</small></span></h3>
+                <p>Café, chocolate oscuro, hielo frappé y cobertura cremosa de chocolate.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Frappuccino de cookies & cream <span>₡2,800 <small>($5.40)</small></span></h3>
+                <p>Bebida helada mezclada con galletas Oreo, leche y base de espresso.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Iced matcha tonic <span>₡2,600 <small>($5.00)</small></span></h3>
+                <p>Matcha ceremonial, agua tónica helada y un toque de limón fresco.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Iced matcha latte <span>₡2,700 <small>($5.20)</small></span></h3>
+                <p>Té matcha ceremonial batido con leche fría y hielo.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Batido de frutas en agua <span>₡1,900 <small>($3.65)</small></span></h3>
+                <p>Refrescantes jugos naturales de frutas de temporada: cas, mango, papaya, fresa y mora.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Batido de frutas en leche <span>₡2,200 <small>($4.20)</small></span></h3>
+                <p>Cremosos licuados con leche entera de frutas frescas.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Batido especial con helado (milkshake) <span>₡2,800 <small>($5.40)</small></span></h3>
+                <p>Batido espeso de vainilla, chocolate o fresa con dos bolas de helado artesanal.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Refresco de chan <span>₡1,500 <small>($2.90)</small></span></h3>
+                <p>Bebida tradicional de semillas de chan, bien fría y refrescante.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Horchata tradicional <span>₡1,600 <small>($3.00)</small></span></h3>
+                <p>Bebida fría a base de arroz, canela, maní y especias dulces.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Agua de sapo (agua dulce fría con limón) <span>₡1,400 <small>($2.70)</small></span></h3>
+                <p>Refresco tradicional con tapa de dulce, jengibre y limón mandarina.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Limonada con hierbabuena <span>₡1,700 <small>($3.30)</small></span></h3>
+                <p>Jugo de limones frescos recién exprimidos con hojas de hierbabuena trituradas.</p>
+            </div>
+            <div class="menu-item" data-category="frias">
+                <h3>Limonada cómplice (frutos rojos) <span>₡2,000 <small>($3.80)</small></span></h3>
+                <p>Limonada natural combinada con reducción de moras y fresas.</p>
+            </div>
+
+            <!-- ==================== PANADERÍA ==================== -->
+            <div class="menu-item" data-category="bakery">
+                <h3>Empanada de chiverre <span>₡1,000 <small>($1.90)</small></span></h3>
+                <p>Masa crujiente horneada rellena de dulce de chiverre tradicional.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Empanada de cajeta o leche <span>₡1,000 <small>($1.90)</small></span></h3>
+                <p>Rellena de dulce de leche cremoso hecho en casa.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Empanada de frijol con picante <span>₡1,000 <small>($1.90)</small></span></h3>
+                <p>Tradicional empanada horneada de pasta de frijol dulce.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Empanada salada de pollo o carne <span>₡1,400 <small>($2.70)</small></span></h3>
+                <p>Empanada de masa frita u horneada rellena de guiso tradicional de la casa.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Tamal asado guanacasteco <span>₡1,200 <small>($2.30)</small></span></h3>
+                <p>Porción horneada a base de maíz dulce, queso, mantequilla y cuajada.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Gallito de queque seco tradicional <span>₡900 <small>($1.70)</small></span></h3>
+                <p>Rebanada de queque casero de vainilla y especias para acompañar el café.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Queque de banano casero <span>₡1,100 <small>($2.10)</small></span></h3>
+                <p>Rebanada de pan de banano húmedo con un toque de nueces y canela.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Queque de zanahoria con crema dulce <span>₡1,900 <small>($3.65)</small></span></h3>
+                <p>Porción generosa de queque de zanahoria especiado con frosting de queso crema.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Arrollado de guayaba <span>₡1,100 <small>($2.10)</small></span></h3>
+                <p>Esponjoso bizcocho relleno de jalea de guayaba artesanal.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Arrollado de dulce de leche <span>₡1,200 <small>($2.30)</small></span></h3>
+                <p>Bizcocho suave enrollado con cajeta cremosa de la casa.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Posada o repochette de queso <span>₡1,300 <small>($2.50)</small></span></h3>
+                <p>Pastelito hojaldrado crujiente relleno de queso salado tico.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Roll de canela <span>₡2,000 <small>($3.80)</small></span></h3>
+                <p>Masa brioche esponjosa con glaseado dulce de queso crema.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Roll de canela con nueces y pecanas <span>₡2,400 <small>($4.60)</small></span></h3>
+                <p>Nuestro roll clásico coronado con crujientes nueces tostadas.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Pain au chocolat <span>₡1,900 <small>($3.65)</small></span></h3>
+                <p>Hojaldre francés relleno de barras de chocolate oscuro.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Croissant de mantequilla <span>₡1,500 <small>($2.90)</small></span></h3>
+                <p>Clásico croissant crujiente por fuera y suave por dentro.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Croissant de jamón y queso <span>₡2,400 <small>($4.60)</small></span></h3>
+                <p>Relleno de jamón de pierna y queso fundido pasado por la plancha.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Croissant almendrado <span>₡2,500 <small>($4.80)</small></span></h3>
+                <p>Relleno de crema de almendras y decorado con láminas tostadas.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Pan casero con mantequilla y natilla <span>₡1,200 <small>($2.30)</small></span></h3>
+                <p>Rebanada gruesa de pan artesanal tostado con natilla de la finca.</p>
+            </div>
+            <div class="menu-item" data-category="bakery">
+                <h3>Pan telera con queso Turrialba planchado <span>₡1,800 <small>($3.50)</small></span></h3>
+                <p>Pan blanco tradicional tostado a la plancha con generoso queso Turrialba.</p>
+            </div>
+
+            <!-- ==================== DESAYUNOS Y ENTRADAS ==================== -->
+            <div class="menu-item" data-category="entradas">
+                <h3>Gallo pinto con huevo y natilla <span>₡3,200 <small>($6.15)</small></span></h3>
+                <p>El clásico desayuno tico con arroz y frijoles, huevos al gusto, natilla y plátano maduro.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Pinto completo con carne en salsa <span>₡4,500 <small>($8.65)</small></span></h3>
+                <p>Gallo pinto acompañado de bistec en salsa, huevo, natilla, plátano y queso frito.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Pinto con salchichón en salsa <span>₡3,800 <small>($7.30)</small></span></h3>
+                <p>Delicioso gallo pinto con rodajas de salchichón guisado al estilo soda tica.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Tortilla con queso Turrialba <span>₡1,800 <small>($3.50)</small></span></h3>
+                <p>Tortilla palmeada recién hecha rellena de auténtico queso Turrialba derretido.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Tortilla con natilla y cuajada <span>₡1,600 <small>($3.00)</small></span></h3>
+                <p>Tortilla palmeada caliente acompañada de cuajada fresca y natilla.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Gallito de papa con salchichón <span>₡1,600 <small>($3.00)</small></span></h3>
+                <p>Tortilla palmeada con guiso casero de papa y rodajas de salchichón tico.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Gallito de picadillo de arracache <span>₡1,700 <small>($3.30)</small></span></h3>
+                <p>Tradicional picadillo de arracache con carne de cerdo en tortilla cascada.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Gallito de picadillo de papa con carne <span>₡1,700 <small>($3.30)</small></span></h3>
+                <p>Picadillo casero servido en tortilla caliente.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Gallito de picadillo de chayote con cerdo <span>₡1,700 <small>($3.30)</small></span></h3>
+                <p>Suave picadillo de chayote tierno con trocitos de cerdo criollo.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Toast de aguacate con huevo poché <span>₡3,900 <small>($7.50)</small></span></h3>
+                <p>Pan de masa madre local, aguacate triturado con limón mandarina y huevo pochado.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Toast de salmón ahumado y queso crema <span>₡4,800 <small>($9.25)</small></span></h3>
+                <p>Pan artesanal de masa madre con salmón ahumado, alcaparras y eneldo.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Omelette rústico de la finca <span>₡3,500 <small>($6.75)</small></span></h3>
+                <p>Huevos de pastoreo con hongos salteados, espinaca y queso tierno, con tostadas.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Omelette de jamón y queso <span>₡3,300 <small>($6.35)</small></span></h3>
+                <p>Clásico omelette relleno de jamón y queso derretido con pan tostado.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Sopa de olla tica (fines de semana) <span>₡4,200 <small>($8.10)</small></span></h3>
+                <p>Sopa tradicional de res con yuca, elote, tiquizque, chayote y plátano verde.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <h3>Crepas saladas de pollo y champiñones <span>₡3,900 <small>($7.50)</small></span></h3>
+                <p>Delicadas crepas francesas con relleno cremoso de pollo y hongos.</p>
+            </div>
+
+            <!-- ==================== POSTRES ==================== -->
+            <div class="menu-item" data-category="postres">
+                <h3>Arroz con leche estilo abuela (tradicional) <span>₡1,800 <small>($3.50)</small></span></h3>
+                <p>Cremoso arroz con leche infusionado con canela entera, clavos de olor, pasas y un toque de limón.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Arroz con leche condensada y canela <span>₡2,000 <small>($3.80)</small></span></h3>
+                <p>Nuestra versión especial extra cremosa bañada en leche condensada y abundante canela en polvo.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Tres leches artesanal clásico <span>₡2,500 <small>($4.80)</small></span></h3>
+                <p>Bizcocho esponjoso empapado en nuestra mezcla especial de tres leches y coronado con merengue
+                    tostado.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Tres leches de café de especialidad <span>₡2,700 <small>($5.20)</small></span></h3>
+                <p>Variación especial del clásico tres leches infusionada con espresso de la casa.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Tres leches de chocolate <span>₡2,700 <small>($5.20)</small></span></h3>
+                <p>Bizcocho de chocolate húmedo bañado en tres leches con cacao y cobertura de chocolate oscuro.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Flan de caramelo tradicional <span>₡2,000 <small>($3.80)</small></span></h3>
+                <p>Flan casero de huevo y leche condensada con costra de caramelo líquido brillante.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Flan de coco tico <span>₡2,200 <small>($4.20)</small></span></h3>
+                <p>Variación tropical con coco rallado natural integrado en la mezcla del flan.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Flan de café <span>₡2,200 <small>($4.20)</small></span></h3>
+                <p>Suave flan artesanal con un delicado toque de café infusionado en la mezcla.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Tres golpes (degustación: cajeta, tres leches y flan) <span>₡3,200 <small>($6.15)</small></span>
+                </h3>
+                <p>Porción personal combinada de tres de nuestros postres más tradicionales de soda tica.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Queque húmedo de chocolate con fudge <span>₡2,400 <small>($4.60)</small></span></h3>
+                <p>Bizcocho denso de chocolate oscuro cubierto de una capa espesa de fudge artesanal.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Queque moka de la casa <span>₡2,500 <small>($4.80)</small></span></h3>
+                <p>Bizcocho de café y chocolate con relleno de crema de mantequilla y moka.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Pie de limón tradicional <span>₡2,100 <small>($4.00)</small></span></h3>
+                <p>Base crujiente de galleta, crema cítrica de limón mandarina y copete de merengue suizo.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Cheesecake de frutos rojos <span>₡2,800 <small>($5.40)</small></span></h3>
+                <p>Cremoso pastel de queso estilo Nueva York con cobertura de moras y fresas silvestres.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Cheesecake de maracuyá (fruta de la pasión) <span>₡2,800 <small>($5.40)</small></span></h3>
+                <p>Pastel de queso frío con reducción agridulce de maracuyá natural.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Cajeta de coco tradicional (2 unidades) <span>₡800 <small>($1.55)</small></span></h3>
+                <p>Dulce típico de feria a base de coco rallado y tapa de dulce artesanal.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Tarta de manzana tibia con helado <span>₡2,900 <small>($5.60)</small></span></h3>
+                <p>Manzanas especiadas en hojaldre crujiente servida con una bola de helado de vainilla artesanal.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <h3>Brownie de chocolate con nueces <span>₡1,900 <small>($3.65)</small></span></h3>
+                <p>Cuadrado de brownie denso, con trozos de chocolate y nueces crujientes.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" role="contentinfo">
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                    class="ri-instagram-line"></i></a>
+            <a href="https://wa.me/50688888888" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                    class="ri-whatsapp-line"></i></a>
+            <a href="#contacto" aria-label="Ubicación"><i class="ri-map-pin-line"></i></a>
+        </div>
+        <p>&copy; 2026 Café Aroma & Sabor. Todos los derechos reservados. San José, Costa Rica.</p>
+    </footer>
+
+    <script src="js/splash.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
